@@ -1,0 +1,27 @@
+.main-products {
+    row-gap: 10px;
+    column-gap: 10px;
+    .banner-container {
+            background-color: aquamarine;
+            height: 150px;
+            margin-bottom: 20px;
+            }
+            .titulo {
+                @include estilotitulo($color2, $black)
+            }
+        .banner-container-footer {
+            background-color: aquamarine;
+            height: 150px;
+            margin-bottom: 20px;
+                .titulo {
+                    justify-content: center;
+                    background-color: $black;
+                    color: white;
+                    font-family: 'Koulen', cursive;
+                    padding: 10px;
+                }
+            }
+            .titulo {
+                @include estilotitulo($color2, $black)
+            }         
+}

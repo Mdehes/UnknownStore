@@ -1,0 +1,93 @@
+$black: #000000;
+$grey: #6B778D;
+$color1: #9DD6DF;
+$color2: #ffff;
+$bg1: #A084CF;
+
+@mixin estilotitulo ($color, $bg) {
+    justify-content: center;
+    background-color: $bg;
+    color: $color;
+    font-family: 'Koulen', cursive;
+    padding: 10px;
+}
+
+.main-index {
+    row-gap: 10px;
+    column-gap: 10px;
+    .banner-container {
+            background-color: aquamarine;
+            height: 150px;
+            margin-bottom: 20px;
+            }
+            .titulo {
+                @include estilotitulo($color2, $black)
+            }
+        .podcast {
+                background-color: $black;
+                margin-bottom: 20px;
+                .titulo {
+                    @include estilotitulo($color2, $black)
+                }
+                .video {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    align-content: center;
+                    }
+                .txt-descripcion {
+                    color: white;
+                    padding: 10px;
+                }
+                
+            }
+        .tabla {
+                margin-bottom: 40px;
+                .titulo {
+                    @include estilotitulo($color2, $black)
+                }
+            }
+        .newsandevents{
+                background-color: $black;
+                margin-bottom: 20px;
+                .titulo {
+                    @include estilotitulo($color2, $black)
+                }
+                .video {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    align-content: center;
+                    }
+                .txt-descripcion {
+                    color: white;
+                    padding: 10px;
+                }
+                
+            }
+        .banner-container-footer {
+            background-color: aquamarine;
+            height: 150px;
+            margin-bottom: 20px;
+                .titulo {
+                    justify-content: center;
+                    background-color: $black;
+                    color: white;
+                    font-family: 'Koulen', cursive;
+                    padding: 10px;
+                }
+            }
+            .titulo {
+                @include estilotitulo($color2, $black)
+            }         
+}
+.titulo {
+    justify-content: center;
+    background-color: $black;
+    color: white;
+    font-family: 'Koulen', cursive;
+    padding: 10px;
+}
+

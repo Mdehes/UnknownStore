@@ -1,0 +1,47 @@
+/*ajustes generales*/
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 56px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+body {
+    font-family: sans-serif;
+}
+@import "main_index";
+@import "main_products";
+@import "main_login";
+
+
+
+.footer {
+    background-color: $black;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    .link {
+        text-decoration: none;
+        text-align: center;
+        background-color: $black;
+        color: white;
+        font-size: 14px;
+        line-height: 15px;
+        margin: 0 10px;
+        padding: 9px;
+        &:hover {
+            background-color: $grey;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+        }
+    }
+}
